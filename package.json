@@ -7,6 +7,9 @@
   "unpkg": "dist/contract.umd.js",
   "types": "dist/contract.d.ts",
   "sideEffects": false,
+  "publishConfig": {
+    "access": "public"
+  },
   "scripts": {
     "test": "jest",
     "build": "rollup -c",
@@ -18,8 +21,7 @@
     "url": "git+https://github.com/effector/contract.git"
   },
   "files": [
-    "dist",
-    "babel-preset.js"
+    "dist"
   ],
   "keywords": [
     "effector",
@@ -34,8 +36,7 @@
   "homepage": "https://github.com/effector/contract#readme",
   "dependencies": {},
   "peerDependencies": {
-    "effector": "^22.2.0",
-    "patronum": "^1.8.2"
+    "effector": "^22.2.0"
   },
   "devDependencies": {
     "@babel/cli": "^7.14.8",
@@ -71,7 +72,6 @@
     "husky": "^6.0.0",
     "jest": "^27.1.0",
     "lint-staged": "^11.0.0",
-    "patronum": "^1.8.2",
     "prettier": "2.2.1",
     "rollup": "^2.50.5",
     "rollup-plugin-dts": "^3.0.2",

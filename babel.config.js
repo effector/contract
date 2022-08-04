@@ -1,4 +1,4 @@
-const presets = ['@babel/preset-typescript', 'patronum/babel-preset'];
+const presets = ['@babel/preset-typescript'];
 
 const common = {
   presets,
